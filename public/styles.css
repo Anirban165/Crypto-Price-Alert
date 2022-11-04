@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;  */
+    /* font-family: 'poppins' ,sans-serif; */
+    
+}
+body{
+    /*display: flex;*/
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: auto;
+    background-size: cover;
+    font-family: 'Manrope', sans-serif;
+    background: rgb(69,104,220)  url('bg.png') no-repeat fixed;
+    background: linear-gradient(90deg, rgba(69,104,220,1) 0%, rgba(176,106,179,1) 100%) ;
+    /* background: #E5D68A; */
+}
+.container{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    margin-top: 6rem;
+    color: #303439;
+}
+.container .coin-price{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0rem;
+    border-radius: 5px;
+    /* box-shadow: 0 0 8px #333; */
+    margin: .5rem;
+    background: #ededfe;
+    box-shadow: 0 6px 10px rgba(0,0,0,.10), 0 0 6px rgba(0,0,0,.05);
+    transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+    cursor: pointer;
+}
+
+/* .container .coin-price .logo{
+    width: 70px;
+     margin-right: 10px;
+} */
+.container .coin-price img{
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    margin: .8rem;
+    margin-top: .5rem
+}
+/* .container .coin-price div{
+    display: block;
+} */
+.container .coin-price div h1{
+    font-size: 21px;
+}
+
+#preloader{
+  background: #7374ff url(./loader.gif) no-repeat center ;
+  background-size: 50%;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+}
+
+.table{
+  background-color: aliceblue;
+  color: #111;
+  font-family: 'Manrope', sans-serif;
+  border-collapse: collapse;
+  /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+  /* font-family: 'Nunito', sans-serif;font-family: 'Nunito', sans-serif; */
+
+}
+tbody{
+  cursor: pointer;
+}
+.navbar{
+  padding: 1.5rem 0;
+  display: none;
+  /* position: static; */
+}
+.navbar-brand{
+  margin-left: 2rem;
+  margin-right: 0;
+}
+.nav-link{
+  margin-left: 2rem;
+}
+.navbar-toggler{ 
+margin-right: 1.5rem;
+}
+.alart{
+  margin-top: 10px;
+  text-transform: capitalize;
+}
+.coin-price:hover{
+     transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0,0,0,.15), 0 4px 8px rgba(0,0,0,.08);
+}
+.form-group{
+  margin-top:  1.5rem ;
+}
+.modal-footer{
+  padding: 0;
+  padding-right: 0px;
+  padding-top: 1.2rem;
+}
+.mg4{
+  margin: 4px 0;
+}
+
+.form-text{
+  padding-left: 8px;
+  font-weight: 100;
+  font-size: smaller;
+  margin-bottom: 10px;
+}
+.modal{
+margin-top: 5rem;
+}
+table{
+  text-align: center;
+}
+h1 span {
+  transition: color .4s ;
+  font-size: 19px;
+}
+h1 {
+  font-weight: 500;
+}
+.center{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 800px) {
+  .table {
+    font-size: 2vw;
+  }
+}
